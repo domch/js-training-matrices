@@ -40,7 +40,7 @@ public class Matrix {
 	}
 
 	public Matrix divide(Matrix mtx) {
-		return this.calculate(mtx, Operations.DEVIDE);
+		return this.calculate(mtx, Operations.DIVIDE);
 	}
 
 	private Matrix calculate(Matrix mtx, Operations operant) {
