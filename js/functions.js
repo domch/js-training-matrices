@@ -5,7 +5,7 @@
  
 "use strict";
 
-
+// ADD
 // For the addition, both of the matrices have to be identical
 const result = [];                                // create result matrix
 const rowCount = m1.length;                       // number of rows in one of the matrix
@@ -22,7 +22,8 @@ for(let row=0; row<rowCount; row++){              // loop over matrix rows.
 console.log(result);
 
 
-// Alternatve way to add
+// ADD
+// Alternative way
 function addLines(pLine1, pLine2){
   return pLine1.map((cell, index) => cell + pLine2[index]);
 }
@@ -34,7 +35,7 @@ console.log(addMatrices(m1, m2));
 
 
 
-
+// MULTIPLY
 //The number of columns of the 1st matrix must equal the number of rows of the 2nd matrix.
 //And the result will have the same number of rows as the 1st matrix, and the same number of columns as the 2nd matrix.
 
