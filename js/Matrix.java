@@ -7,7 +7,7 @@ public class Matrix {
 	private ArrayList<ArrayList> matrix;
 
 	private enum Operations {
-		ADD, SUBSTRACT, MULTIPLY, DEVIDE
+		ADD, SUBSTRACT, MULTIPLY, DIVIDE
 	};
 
 	public Matrix() {
@@ -62,7 +62,7 @@ public class Matrix {
 				case MULTIPLY:
 					total = first * second;
 					break;
-				case DEVIDE:
+				case DIVIDE:
 					if (second == 0) {
 						total = 0;
 					} else {
