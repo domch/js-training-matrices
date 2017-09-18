@@ -1,4 +1,4 @@
- package tests;
+package tests;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +45,6 @@ public class Matrix {
 
 	private Matrix calculate(Matrix mtx, Operations operant) {
 		ArrayList<ArrayList> result = new ArrayList<ArrayList>();
-
 		for (int i = 0; i < matrix.size(); i++) {
 			ArrayList a = new ArrayList();
 			for (int k = 0; k < matrix.size(); k++) {
@@ -53,22 +52,18 @@ public class Matrix {
 				int second = (int) mtx.getMatrix().get(i).get(k);
 				int total = 0;
 				switch (operant) {
-				case ADD:
-					total = first + second;
-					break;
-				case SUBSTRACT:
-					total = first - second;
-					break;
-				case MULTIPLY:
-					total = first * second;
-					break;
-				case DIVIDE:
-					if (second == 0) {
-						total = 0;
-					} else {
-						total = first / second;
-					}
-					break;
+					case ADD:
+						total = first + second;
+						break;
+					case SUBSTRACT:
+						total = first - second;
+						break;
+					case MULTIPLY:
+						total = first * second;
+						break;
+					case DIVIDE:
+						total =  second == 0 ? 0 : first / second;
+						break;
 				}
 				a.add(total);
 			}
