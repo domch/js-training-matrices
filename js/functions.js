@@ -21,6 +21,14 @@ for(let row=0; row<rowCount; row++){              // loop over matrix rows.
 
 console.log(result);
 
+let mx1 = [
+    [1,2,3],
+    [1,2,3]
+];
+let mx2 = [
+    [1,2,3],
+    [1,2,3]
+];
 
 // ADD
 // Alternative way
@@ -43,18 +51,18 @@ const result = [];                                // create result matrix
 const rowCount = m1.length;                       // number of rows in one of the matrix
 const colCount = m2[0].length;                    // number of columns in one of the matrix
 
-// check
-
-function getColumn(pMatrix, pCol){
-  return pMatrix.reduce((acc, value, index)=>{ 
-    acc.push(value[pCol]);
-    return acc;
-  }, [])
+function getColumn(pMatrix, pCol){                // collect the elements in given column "pCol" as array.
+  return pMatrix                                  
+          .reduce((acc, value, index)=>{ 
+                acc.push(value[pCol]);
+                return acc;
+           }, [])
 }
 
 function multiplyLines(pRow, pCol){
-  return pRow.map((value, index) => value * pCol[index])
-      .reduce((acc, value) => acc + value, 0);
+  return pRow                                     // ...
+          .map((value, index) => value * pCol[index])
+          .reduce((acc, value) => acc + value, 0);
 }
 
 for (let row = 0; row < rowCount; row++) {

@@ -28,3 +28,8 @@ matrix1.substract(matrix2).display();
 
 // 03: multiply and display
 matrix1.multiply(matrix2).display();
+
+
+Array.prototype.add = function(mx){
+    
+}
