@@ -19,17 +19,17 @@ let matrix2 =
         [1, 5, -1]
     ];
 
-
+// todo: merhaba 
 // 01: add and display
 matrix1.add(matrix2).display();
-
+// fixme: bu ne olum
 // 02: substract and display
 matrix1.substract(matrix2).display();
 
 // 03: multiply and display
 matrix1.multiply(matrix2).display();
 
-
+// future: object orinted
 Array.prototype.add = function(mx){
     
 }
